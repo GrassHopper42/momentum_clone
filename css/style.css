@@ -1,3 +1,103 @@
+* {
+  color: beige;
+  margin: 0;
+}
 .hidden {
   display: none;
+}
+#bg-img {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#weather {
+  width: 200px;
+  height: 50px;
+  /* background-color: rgba(245, 245, 220, 0.527); */
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#weather span:first-child {
+  font-size: 32px;
+}
+#weather span:first-child img {
+  vertical-align: middle;
+}
+
+#clock {
+  top: 25vh;
+  font-size: 160px;
+}
+#login-form input:first-child {
+  width: 600px;
+  height: 60px;
+  border: none;
+  border-bottom: white 3px solid;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 60px;
+  text-align: center;
+}
+#login-form input:first-child::placeholder {
+  color: white;
+}
+#greeting {
+  margin: 3% 0px;
+  font-size: 50px;
+}
+#todo-form input {
+  width: 500px;
+  height: 50px;
+  margin: 3% 0;
+  border: none;
+  border-bottom: white 1.5px solid;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 32px;
+  text-align: center;
+}
+#todo-form input::placeholder {
+  color: white;
+}
+#todo-list li {
+  width: 300px;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#todo-list li span {
+  margin: auto;
+}
+#todo-list li button {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 20px;
+}
+#quotes {
+  position: fixed;
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#quotes span:first-child {
+  font-style: italic;
+}
+#quotes span:last-child {
+  font-weight: bold;
+  margin-top: 1%;
 }
