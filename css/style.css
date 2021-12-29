@@ -1,9 +1,10 @@
+@import url("./calc.css");
 * {
   color: beige;
   margin: 0;
 }
-.hidden {
-  display: none;
+html {
+  font-size: 20px;
 }
 #bg-img {
   position: fixed;
@@ -100,4 +101,8 @@ body {
 #quotes span:last-child {
   font-weight: bold;
   margin-top: 1%;
+}
+.hidden {
+  display: none;
+  visibility: hidden;
 }
